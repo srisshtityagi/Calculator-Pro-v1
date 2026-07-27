@@ -58,22 +58,29 @@ public class Calculatorprov1 {
         int power = 1;
         public static void powerOfNum(int base, int power){
             if(power == 0){
-                System.out.println("1");
+                System.out.println("ans is - 1");
+                return;
             }
+            if(power < 0){
+                System.out.println("Negative powers are not supported");
+                return;
+            }
+            long result = 1;
             for(int i = 1; i <= power; i++){
-                power = power * base;
+                result = result * base;
             }
+            System.out.println("Ans is - " + result);
         }
         public static void factorial(int p){
-            if(p < 1){
+            if(p < 0){
                 System.out.println("not defined for negative numbers");
-            }else if( p == 0){
-                System.out.println("1");
+                return;
             }
-        int factorial = 1;
+            long result = 1;
             for(int i = p; i >= 1; i--){
-                factorial = factorial * i;
+                result = result * i;
             }
+            System.out.println("Ans is - " + result);
         }
         public static void primeCheck(int q){
             if(q == 0){
@@ -212,18 +219,21 @@ public class Calculatorprov1 {
         System.out.println("   ");
         System.out.println("Result");
         powerOfNum(base, power);
+        break;
 
         case 9 : System.out.println("Enter your number - ");
         int p = sc.nextInt();
         System.out.println("   ");
         System.out.println("Result");
         factorial(p);
+        break;
 
         case 10 : System.out.println("Enter your number - ");
         int q = sc.nextInt();
         System.out.println("   ");
         System.out.println("Result");
         primeCheck(q);
+        break;
 
         case 11 : System.out.println("Enter your first number - ");
         int C = sc.nextInt();
@@ -257,6 +267,7 @@ public class Calculatorprov1 {
         System.out.println("   ");
         System.out.println("Result");
         System.out.println(avg);
+        break;
 
         case 14 : System.out.println("Exiting calculator pro");
         counterchoice = 2;
