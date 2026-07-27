@@ -146,7 +146,6 @@ public class Calculatorprov1 {
         int sum = sumOfTwo(a, b);
         System.out.println("   ");
         System.out.println("Result");
-        System.out.println(" ");
         System.out.println("Ans is - " + sum);
         break;
 
@@ -157,7 +156,6 @@ public class Calculatorprov1 {
         int diff = diffOfTwo(c, d);
         System.out.println("   ");
         System.out.println("Result");
-        System.out.println(" ");
         System.out.println("Ans is - " +diff);
         break;
 
@@ -168,7 +166,6 @@ public class Calculatorprov1 {
         int mul = mulOfTwo(e, f);
         System.out.println("   ");
         System.out.println("Result");
-        System.out.println(" ");
         System.out.println("Ans is - " +mul);
         break;
 
@@ -179,7 +176,6 @@ public class Calculatorprov1 {
         int div = divOfTwo(g, h);
         System.out.println("   ");
         System.out.println("Result");
-        System.out.println(" ");
         System.out.println("Ans is - " +div);
         break;
 
@@ -190,7 +186,6 @@ public class Calculatorprov1 {
         int mod = modOfTwo(i, j);
         System.out.println("   ");
         System.out.println("Result");
-        System.out.println(" ");
         System.out.println("Ans is - " +mod);
         break;
 
@@ -199,7 +194,6 @@ public class Calculatorprov1 {
         int square = squareOfNum(A);
         System.out.println("   ");
         System.out.println("Result");
-        System.out.println(" ");
         System.out.println("Ans is - " +square);
         break;
 
@@ -208,7 +202,6 @@ public class Calculatorprov1 {
         int cube = cubeOfNum(B);
         System.out.println("   ");
         System.out.println("Result");
-        System.out.println(" ");
         System.out.println("Ans is - " +cube);
         break;
 
@@ -218,21 +211,18 @@ public class Calculatorprov1 {
         int power = sc.nextInt();
         System.out.println("   ");
         System.out.println("Result");
-        System.out.println(" ");
         powerOfNum(base, power);
 
         case 9 : System.out.println("Enter your number - ");
         int p = sc.nextInt();
         System.out.println("   ");
         System.out.println("Result");
-        System.out.println(" ");
         factorial(p);
 
         case 10 : System.out.println("Enter your number - ");
         int q = sc.nextInt();
         System.out.println("   ");
         System.out.println("Result");
-        System.out.println(" ");
         primeCheck(q);
 
         case 11 : System.out.println("Enter your first number - ");
@@ -243,7 +233,6 @@ public class Calculatorprov1 {
         int E = sc.nextInt();
         System.out.println("   ");
         System.out.println("Result");
-        System.out.println(" ");
         maxOfAll(C, D, E);
         break;
 
@@ -255,7 +244,6 @@ public class Calculatorprov1 {
         int H = sc.nextInt();
         System.out.println("   ");
         System.out.println("Result");
-        System.out.println(" ");
         minOfAll(F, G, H);
         break;
 
@@ -268,7 +256,6 @@ public class Calculatorprov1 {
         int avg = avgOfAll(k, l, m);
         System.out.println("   ");
         System.out.println("Result");
-        System.out.println(" ");
         System.out.println(avg);
 
         case 14 : System.out.println("Exiting calculator pro");
@@ -279,7 +266,7 @@ public class Calculatorprov1 {
         counterchoice = 1;
         break;
         }
-
+        System.out.println(" ");
         System.out.println("Would you like to perform further calculations?");
         System.out.println("1 - YES ");
         System.out.println("2 - NO ");
